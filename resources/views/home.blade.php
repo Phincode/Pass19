@@ -6,7 +6,7 @@
             <h5 class="mb-0">Tableau de bord</h5>
 
             <div class="row">
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+              {{--   <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
@@ -18,9 +18,9 @@
                             </div>
                         </div>
                     </div>
-                </div><!--end col-->
+                </div><!--end col--> --}}
 
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+              {{--   <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
@@ -32,23 +32,23 @@
                             </div>
                         </div>
                     </div>
-                </div><!--end col-->
+                </div> --}}<!--end col-->
 
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+                <div class="col-xl-5 col-lg-5 col-md-5 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
                                 <i class="uil uil-social-distancing h3 mb-0"></i>
                             </div>
                             <div class="flex-1 ms-2">
-                                <h5 class="mb-0">112</h5>
-                                <p class="text-muted mb-0">Staff Members</p>
+                                <h5 class="mb-0">{{$nombreUtilisateur}}</h5>
+                                <p class="text-muted mb-0">Utilisateurs</p>
                             </div>
                         </div>
                     </div>
                 </div><!--end col-->
 
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+              {{--   <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
@@ -61,23 +61,23 @@
                         </div>
 
                     </div>
-                </div><!--end col-->
+                </div> --}}<!--end col-->
 
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+                <div class="col-xl-5 col-lg-5 col-md-5 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
                                 <i class="uil uil-medkit h3 mb-0"></i>
                             </div>
                             <div class="flex-1 ms-2">
-                                <h5 class="mb-0">220</h5>
-                                <p class="text-muted mb-0">Appointment</p>
+                                <h5 class="mb-0">{{$nombrePatient}}</h5>
+                                <p class="text-muted mb-0">Vaccinés</p>
                             </div>
                         </div>
                     </div>
                 </div><!--end col-->
 
-                <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+                {{-- <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                     <div class="card features feature-primary rounded border-0 shadow p-4">
                         <div class="d-flex align-items-center">
                             <div class="icon text-center rounded-md">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                </div><!--end col-->
+                </div> --}}<!--end col-->
             </div><!--end row-->
 
         </div>

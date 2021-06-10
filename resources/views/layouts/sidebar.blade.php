@@ -1,7 +1,7 @@
 <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
         <div class="sidebar-brand">
-            <a href="#"><img src="images/logo-dark.png" height="22" alt=""></a>
+            <a href="#"><img src="images/Capture.PNG" height="50" alt=""></a>
         </div>
 
         <ul class="sidebar-menu pt-3">

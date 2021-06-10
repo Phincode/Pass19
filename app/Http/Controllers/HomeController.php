@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Patient;
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //get user number
+         $nombreUtilisateur=User::all()->count();
+         $nombrePatient=Patient::all()->count();
+        return view('home',["nombreUtilisateur"=>$nombreUtilisateur,"nombrePatient"=>$nombrePatient]);
     }
 }

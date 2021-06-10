@@ -17,10 +17,10 @@
             <div class="row">
                 <div class="col-lg-8 mt-4">
                     <div class="card border-0 p-4 rounded shadow">
-
+                        
                         <a href="#" class="btn btn-icon btn-pills btn-soft-primary"
                            data-bs-toggle="modal"
-                           data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
+                           data-bs-target="#viewprofile"><i class="uil uil-camera"></i></a>
 
                         <div class="modal fade" id="viewprofile"
                              tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -65,10 +65,10 @@
                                                     </a>
                                                 </div>
                                             </div><!--end col-->
-                                            <form action="{{ route('patient.update', $patient->id_patient ) }}" method="POST">
-                                                @csrf
-                                                @method("PATCH")
-                                                <div class="col-lg-6">
+                                            <div class="col-lg-6">
+                                                <form action="{{ route('patient.update', $patient->id_patient ) }}" method="POST">
+                                                    @csrf
+                                                    @method("PATCH")
                                                     <div class="d-grid" id="photo_data_parent">
                                                         <button type="submit"
                                                                 class="btn btn-primary">
@@ -76,13 +76,15 @@
                                                         </button>
 
                                                     </div>
-                                                </div><!--end col-->
-                                                <input type="hidden" value="{{ $patient->id_patient }}">
-                                                <div id="photo_data">
-
-                                                </div>
-
-                                            </form>
+                                                    <input type="hidden" value="{{ $patient->id_patient }}">
+                                                    <div id="photo_data">
+    
+                                                    </div>
+    
+                                                </form>
+                                            </div><!--end col-->
+                                              
+                                          
                                         </div>
                                     </div>
                                 </div>

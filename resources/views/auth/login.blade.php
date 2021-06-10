@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
-    <title>Doctris - Doctor Appointment Booking System</title>
+    <title>EkipTech Pass-19</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium Bootstrap 4 Landing Page Template"/>
     <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health"/>
@@ -41,7 +41,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8">
-                <img src="images/logo-dark.png" height="24" class="mx-auto d-block" alt="">
+                <img src="{{asset('images/Capture.PNG')}}" height="100" class="mx-auto d-block" alt="">
                 <div class="card login-page bg-white shadow mt-4 rounded border-0">
                     <div class="card-body">
                         <h4 class="text-center">Connexion</h4>

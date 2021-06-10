@@ -4,11 +4,11 @@
         <div class="layout-specing">
             <div class="row">
                 <div class="col-xl-9 col-lg-6 col-md-4">
-                    <h5 class="mb-0">Appointment</h5>
+                    <h5 class="mb-0">Base de données des personnes vaccinées</h5>
                     <nav aria-label="breadcrumb" class="d-inline-block mt-2">
                         <ul class="breadcrumb breadcrumb-muted bg-transparent rounded mb-0 p-0">
-                            <li class="breadcrumb-item"><a href="/home">Doctris</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Appointment</li>
+                            <li class="breadcrumb-item"><a href="/home">Pass-19</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">List vaccinées</li>
                         </ul>
                     </nav>
                 </div><!--end col-->
@@ -171,9 +171,9 @@
             @endif
 
             @if ($message = Session::get('success'))
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <div id="suc" class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>{{ $message }}</strong>
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <button id="close" type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true"> × </span>
                     </button>
                 </div>
@@ -217,7 +217,7 @@
                                     <td>{{ $patient->email_user }}</td>
                                     <td>{{ $patient->updated_at }}</td>
                                     <td class="text-end">
-                                        <a href="{{ route('patient.edit', $patient->id_patient) }}" title="prendre photo" class="btn btn-primary"><i class="uil uil-eye"></i></a>
+                                        <a href="{{ route('patient.edit', $patient->id_patient) }}" title="prendre photo" class="btn btn-primary"><i class="uil uil-camera"></i></a>
 
                                         <div class="modal fade" id="viewprofile-{{ $patient->id_patient }}"
                                              tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -309,3 +309,14 @@
         </div>
     </div><!--end container-->
 @endsection
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $.noConflict();
+    $(document).ready(function () {
+        $('#close').on('click',function(){
+            $('#suc').css({
+                'display':'none'
+            })
+        })
+    });
+</script>
