@@ -36,6 +36,8 @@
                   <?php
                   $admin = \App\User::where('role', 'AD')->where('id', Auth::user('id')->id)
                       ->count();
+                $user = \App\User::where('role', 'US')->where('id', Auth::user('id')->id)
+                      ->count();
                   ;?>
                   @if ($admin == 1)
 
@@ -97,7 +99,7 @@
                     </div>
                 </div> --}}<!--end col-->
             </div><!--end row-->
-
+            @if ($user == 1)
             <div class="row">
                 <div class="col-12 mt-4">
                     <div class="table-responsive shadow rounded">
@@ -214,7 +216,7 @@
                     </div>
                 </div>
             </div><!--end row-->
-
+            @endif
         </div>
     </div><!--end container-->
 @endsection
