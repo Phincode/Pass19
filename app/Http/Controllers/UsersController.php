@@ -18,7 +18,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('patient.users');
+       //
     }
 
     /**
