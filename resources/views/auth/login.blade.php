@@ -97,6 +97,8 @@
                                 </div>
                             </div>
                         </form>
+                        <br> <br>
+                        <a href="" class="text-dark h6 mb-0">J'ai pas encore de compte je veux m'inscrire:<span style="text-decoration: underline">cliquez ici!</span> </a>
                     </div>
                 </div><!---->
             </div> <!--end col-->
