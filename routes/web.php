@@ -29,3 +29,4 @@ Route::resource('patient', 'PatientController');
 // Patient
 Route::resource('users', 'UsersController');
 Route::post('/compte', 'UsersController@compte');
+Route::post('/search', 'HomeController@searchCertificat')->name('search');

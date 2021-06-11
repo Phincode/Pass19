@@ -185,6 +185,7 @@
                         <table class="table table-center bg-white mb-0">
                             <thead>
                             <tr>
+                                <th class="border-bottom py-3" style="min-width: 120px;">Code</th>
                                 <th class="border-bottom py-3" style="min-width: 120px;">Date</th>
                                 <th class="border-bottom py-3" style="min-width: 50px;">Photo</th>
                                 <th class="border-bottom py-3">Nom</th>
@@ -200,6 +201,7 @@
                             <tbody>
                             @foreach($patients as $patient)
                                 <tr>
+                                    <th>{{ $patient->code_patient}}</th>
                                     <th>{{ $patient->date }}</th>
                                     <td class="py-3">
                                         <a href="#" class="text-dark">

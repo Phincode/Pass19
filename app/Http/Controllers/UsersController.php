@@ -91,7 +91,6 @@ class UsersController extends Controller
     {
         //validation
         $rules = [
-            'code' => 'required',
             'name' => 'required|max:30',
             'prenoms' => 'required',
             'contact' => 'required|unique:users|digits:10',
@@ -110,14 +109,13 @@ class UsersController extends Controller
         ];
 
         $this->validate($request, $rules, $customMessages);
-
-        $verif = Patient::where('id_patient', $request->code)->where('nom_patient', $request->name)->count();
-        if ($verif == 1) {
+        $verif=Patient::where('tel','=',$request->contact)->get();
+        if (sizeof($verif)!=0) {
             $user = new User;
             $user->name = $request->name;
             $user->prenoms = $request->prenoms;
             $user->contact = $request->contact;
-            $user->id_patient = $request->code;
+            $user->id_patient=0;
             $user->role = 'US';
             $user->password = Hash::make($request->password);
             $user->save();

@@ -19,10 +19,10 @@
     <br>
     <div class="row">
         <div>
-            <img src="{{ asset('images/capture.png') }}" alt="" style="height: 100px;width: 200px">
+            <img src="{{ asset('images/Capture.PNG') }}" alt="" style="height: 100px;width: 200px">
         </div>
         <div style="margin-top: -100px; margin-left: 800px; float: right">
-            <img src="{{ asset('images/capture1.png') }}" alt="" style="height: 100px;width: 200px;">
+            <img src="{{ asset('images/Capture1.PNG') }}" alt="" style="height: 100px;width: 200px;">
         </div>
     </div>
     <br>
@@ -85,9 +85,11 @@
     <br>
     <br>
     <div class="col-md-4 offset-9">
-        <img src="{{ asset('images/capture3.png') }}" alt="" style="height: 100px;width: 200px">
+        <img src="{{ asset('images/Capture3.PNG') }}" alt="" style="height: 100px;width: 200px">
     </div>
     <div class="mt-4"  align="center">
+
+        <a href="{{route('home')}}" class="btn btn-soft-primary d-print-none"><i class="uil uil-back"></i> Retour</a> 
 
         <a onclick="window.print();" class="btn btn-soft-primary d-print-none"><i class="uil uil-print"></i> Print</a>
 

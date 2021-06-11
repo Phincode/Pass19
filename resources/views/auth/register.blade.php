@@ -59,11 +59,11 @@
                             @csrf
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="mb-3">
+                                    {{-- <div class="mb-3">
                                         <label class="form-label">Code patient <span class="text-danger">*</span></label>
                                         <input type="number" class="form-control" placeholder="Entrez votre code patient" name="code"
                                                required="">
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">

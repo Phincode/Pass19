@@ -92,6 +92,7 @@ class PatientController extends Controller
         $now = date('Y-m-d');
         $user = Auth::user()->email;
 
+      
         $patient = new Patient;
         $patient->nom_patient = $request->nom_patient;
         $patient->prenom_patient = $request->prenom_patient;
@@ -105,6 +106,7 @@ class PatientController extends Controller
         $patient->specialite_med = $request->specialite_med;
         $patient->vaccin = $request->vaccin;
         $patient->email_user = $user;
+        $patient->code_patient=uniqid('P19_');
         $patient->save();
 
         return back()->with('success', 'Patient enregistré avec succès');
