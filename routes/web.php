@@ -25,3 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Patient
 Route::resource('patient', 'PatientController');
+
+// Patient
+Route::resource('users', 'UsersController');
+Route::post('/compte', 'UsersController@compte');

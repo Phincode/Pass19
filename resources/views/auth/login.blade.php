@@ -50,10 +50,10 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Email <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                               placeholder="Email" name="email" value="{{ old('email') }}" required
-                                               autocomplete="email" autofocus>
+                                        <label class="form-label">Numero de téléphone <span class="text-danger">*</span></label>
+                                        <input type="number" class="form-control @error('contact') is-invalid @enderror"
+                                               placeholder="Entrez" name="contact" value="{{ old('contact') }}" required
+                                               autocomplete="contact" autofocus>
 
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -97,8 +97,10 @@
                                 </div>
                             </div>
                         </form>
-                        <br> <br>
-                        <a href="" class="text-dark h6 mb-0">J'ai pas encore de compte je veux m'inscrire:<span style="text-decoration: underline">cliquez ici et vous serez redirigé apres!</span> </a>
+                        <div class="col-12 text-center">
+                            <p class="mb-0 mt-3"><small class="text-dark me-2">J'ai pas encore de compte je veux m'inscrire:</small>
+                                <a href="{{ route('register') }}" class="text-dark fw-bold">cliquez ici</a></p>
+                        </div>
                     </div>
                 </div><!---->
             </div> <!--end col-->

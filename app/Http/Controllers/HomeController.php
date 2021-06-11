@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Patient;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -28,6 +29,7 @@ class HomeController extends Controller
         //get user number
          $nombreUtilisateur=User::all()->count();
          $nombrePatient=Patient::all()->count();
-        return view('home',["nombreUtilisateur"=>$nombreUtilisateur,"nombrePatient"=>$nombrePatient]);
+         $data['patients'] = Patient::join("users", 'patients.id_patient', '=', 'users.id_patient')->where('users.id', Auth::user()->id)->get();
+        return view('home',["nombreUtilisateur"=>$nombreUtilisateur,"nombrePatient"=>$nombrePatient],$data);
     }
 }
