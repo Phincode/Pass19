@@ -34,8 +34,9 @@
 @include('layouts.load')
 <!-- Loader -->
 
-<div class="page-wrapper chiller-theme toggled">
+<div class="page-wrapper chiller-theme ">
     @include('layouts.sidebar')
+    
     <!-- sidebar-wrapper  -->
 
     <!-- Start Page Content -->

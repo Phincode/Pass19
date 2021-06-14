@@ -36,11 +36,11 @@
 <!-- Loader -->
 
 <!-- Hero Start -->
-<section class="bg-half-150 d-table w-100 bg-light" style="background: url('images/bg/bg-lines-one.png') center;">
+<section class="bg-half-150 d-table w-100 bg-light" style="background: url('images/bg/fond.png') center;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8">
-                <img src="" height="24" class="mx-auto d-block" alt="">
+                <img src="{{asset('images/Capture.PNG')}}"  height="80px" class="mx-auto d-block " alt="">
                 <div class="card login-page bg-white shadow mt-4 rounded border-0">
                     @if($errors->any())
                         <div class="alert alert-danger" role="alert">
@@ -100,8 +100,10 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="d-grid">
-                                        <button type="submit" class="btn btn-primary">Creer</button>
+                                        <button style="background-color: pink"  type="submit" class="btn">Creer</button>
                                     </div>
+                                    <p class="mb-0 mt-3"><small class="text-dark me-2">J'ai déjà un compte je veux me connecter:</small>
+                                        <a href="{{ route('login') }}" class="text-dark fw-bold">cliquez ici</a></p>
                                 </div>
                             </div>
                         </form>

@@ -6,8 +6,7 @@
                 <img src="images/logo-dark.png" height="22" class="big" alt="">
             </a>
             <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-3" href="#">
-                x
-                    
+                >  
             </a>
         </div>
 

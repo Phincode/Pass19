@@ -37,11 +37,20 @@
 
 <!-- Hero Start -->
 <section class="bg-home d-flex bg-light align-items-center"
-         style="background: url('images/bg/bg-lines-one.png') center;">
+         style="background: url('images/bg/fond.png') center;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8">
-                <img src="{{asset('images/Capture.PNG')}}" height="100" class="mx-auto d-block" alt="">
+                <img src="{{asset('images/Capture.PNG')}}"  height="80px" class="mx-auto d-block " alt="">
+                <div>
+                   <center>
+                       <br>
+                       <p>
+                        Bienvenue sur l’espace de renseignement des personnes vaccinées au Covid-19 du ministère
+                        du transport de Côte d’ivoire.
+                       </p>
+                   </center>
+                </div>
                 <div class="card login-page bg-white shadow mt-4 rounded border-0">
                     <div class="card-body">
                         <h4 class="text-center">Connexion</h4>
@@ -92,7 +101,7 @@
                                 </div>
                                 <div class="col-lg-12 mb-0">
                                     <div class="d-grid">
-                                        <button class="btn btn-primary">Se connecter</button>
+                                        <button style="background-color: pink" class="btn">Se connecter</button>
                                     </div>
                                 </div>
                             </div>
